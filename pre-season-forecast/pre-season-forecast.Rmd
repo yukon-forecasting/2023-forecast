@@ -292,6 +292,13 @@ long_term_means$range <- c(
 kable(long_term_means)
 ```
 
+```{r historical_means_timing}
+long_term_timing_means <- data.frame(
+  fifdj = mean(yukon$fifdj, na.rm = TRUE),
+  qdj = mean(yukon$qdj, na.rm = TRUE),
+  mdj = mean(yukon$mdj, na.rm = TRUE))
+kable(long_term_timing_means)
+```
 
 ## Hindcast all three models
 
@@ -375,6 +382,6 @@ ggplot(data = yukon, aes(year, diff)) +
   geom_hline(yintercept=0) +
   xlab("Year") +
   ylab(NULL) +
-  ggtitle("Run Timing Anomalies (days), 1961–2022",
+  ggtitle("Median Run Timing Anomalies (days), 1961–2022",
           subtitle = "+ = later, - = earlier")
 ```
