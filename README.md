@@ -6,7 +6,20 @@ See our [AOOS Project Page](https://aoos.org/project-page/ecosystems/yukon-river
 
 ## 2023 Forecast
 
-TODO
+| Percentile | Day of June |
+|------------|-------------|
+| 15         | 20          |
+| 25         | 22          |
+| 50         | 26          |
+
+### Chart 1
+
+![](./daily-forecast/figures/chart_one.png)
+
+
+### Chart 2
+
+![](./daily-forecast/figures/final_cpue.png)
 
 More detail available at in the [pre-season-forecast](https://github.com/yukon-forecasting/2023-forecast/tree/main/pre-season-forecast) folder.
 
