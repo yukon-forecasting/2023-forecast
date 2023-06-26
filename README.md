@@ -2,7 +2,7 @@
 
 Data, code, and output for the 2023 operational forecast of Yukon River Chinook salmon run timing.
 
-See our [AOOS Project Page](https://aoos.org/project-page/ecosystems/yukon-river-chinook-run-timing/).
+See our [AOOS Project Page](https://aoos.org/project/yukon-river-chinook-run-timing/).
 
 ## 2023 Forecast
 
