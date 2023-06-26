@@ -263,15 +263,15 @@ model_selection_result <- hindcast_models(yukon, models, hindcast_years)
 knitr::kable(model_selection_result)
 ```
 
-| model                       | MAPE | SDMAPE | width | p.in | absmax | meanbias |
-|:----------------------------|-----:|-------:|------:|-----:|-------:|---------:|
-| mdj \~ amatc                | 4.40 |   2.72 |  6.05 | 0.40 |     12 |    -4.40 |
-| mdj \~ msstc                | 1.73 |   1.53 |  4.42 | 0.60 |      5 |    -0.93 |
-| mdj \~ pice                 | 3.73 |   3.45 |  6.73 | 0.60 |     11 |    -3.60 |
-| mdj \~ amatc + msstc        | 2.40 |   1.72 |  5.77 | 0.60 |      7 |    -2.00 |
-| mdj \~ amatc + pice         | 4.07 |   3.03 |  8.03 | 0.40 |     10 |    -3.93 |
-| mdj \~ msstc + pice         | 2.27 |   2.19 |  7.03 | 0.80 |      7 |    -1.60 |
-| mdj \~ amatc + msstc + pice | 2.27 |   1.94 |  8.01 | 0.87 |      6 |    -1.87 |
+| model                      | MAPE | SDMAPE | width | p.in | absmax | meanbias |
+|:---------------------------|-----:|-------:|------:|-----:|-------:|---------:|
+| mdj ~ amatc                | 4.40 |   2.72 |  6.05 | 0.40 |     12 |    -4.40 |
+| mdj ~ msstc                | 1.73 |   1.53 |  4.42 | 0.60 |      5 |    -0.93 |
+| mdj ~ pice                 | 3.73 |   3.45 |  6.73 | 0.60 |     11 |    -3.60 |
+| mdj ~ amatc + msstc        | 2.40 |   1.72 |  5.77 | 0.60 |      7 |    -2.00 |
+| mdj ~ amatc + pice         | 4.07 |   3.03 |  8.03 | 0.40 |     10 |    -3.93 |
+| mdj ~ msstc + pice         | 2.27 |   2.19 |  7.03 | 0.80 |      7 |    -1.60 |
+| mdj ~ amatc + msstc + pice | 2.27 |   1.94 |  8.01 | 0.87 |      6 |    -1.87 |
 
 ``` r
 write.csv(model_selection_result, file = "./output/model_select.csv")
@@ -473,11 +473,11 @@ write_csv(hindcast_all_percentiles, "output/hindcast_all_models.csv")
 kable(hindcast_all_percentiles)
 ```
 
-| model                         | MAPE | SDMAPE | width | p.in | absmax | meanbias |
-|:------------------------------|-----:|-------:|------:|-----:|-------:|---------:|
-| fifdj \~ amatc + msstc + pice | 2.93 |   2.74 |  8.09 | 0.87 |      9 |    -0.53 |
-| qdj \~ amatc + msstc + pice   | 2.67 |   2.87 |  7.58 | 0.73 |      9 |    -0.67 |
-| mdj \~ amatc + msstc + pice   | 2.27 |   1.94 |  8.01 | 0.87 |      6 |    -1.87 |
+| model                        | MAPE | SDMAPE | width | p.in | absmax | meanbias |
+|:-----------------------------|-----:|-------:|------:|-----:|-------:|---------:|
+| fifdj ~ amatc + msstc + pice | 2.93 |   2.74 |  8.09 | 0.87 |      9 |    -0.53 |
+| qdj ~ amatc + msstc + pice   | 2.67 |   2.87 |  7.58 | 0.73 |      9 |    -0.67 |
+| mdj ~ amatc + msstc + pice   | 2.27 |   1.94 |  8.01 | 0.87 |      6 |    -1.87 |
 
 ``` r
 hindcast_models <- c(
