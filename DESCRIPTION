@@ -19,3 +19,5 @@ Imports:
     knitr,
     patchwork,
     readr
+Suggests:
+    renv
